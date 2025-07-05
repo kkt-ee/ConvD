@@ -33,11 +33,12 @@ class FFTConvND(tf.keras.layers.Layer):
         You should have received a copy of the GNU General Public License
         along with this program.  If not, see <https://www.gnu.org/licenses/>.   
         
-    --kkt@07-Jun-2025"""
-    def __init__(self, filters, kernel_size=9):#, l1=0.0, l2=0.0):
+    --kkt@06Jul2025"""
+    def __init__(self, filters, kernel_size=9, regularizer=None):#, l1=0.0, l2=0.0):
         super(FFTConvND, self).__init__()
         self.filters = filters
         self.kernel_size = kernel_size
+        self.kernel_regularizer = regularizer
         # self.dim = dim
         # self.axes = axes
 
@@ -60,6 +61,7 @@ class FFTConvND(tf.keras.layers.Layer):
             shape=kernel_shape,
             initializer='glorot_uniform',
             trainable=True,
+            regularizer=self.kernel_regularizer,
             name='kernel'
         )
         
@@ -248,17 +250,20 @@ class FFTConvND(tf.keras.layers.Layer):
     #     output_shape = tf.TensorShape([batch_size, *spatial_dims, channels_out])
     #     return output_shape
 
-   
     def get_config(self):
         config = super().get_config()
         config.update({
             'kernel_size': self.kernel_size,
-            'filters': self.filters            
+            'filters': self.filters,
+            'regularizer': self.kernel_regularizer
         })
         return config
 
 
 if __name__ =='__main__':
+    import os
+    os.environ["CUDA_VISIBLE_DEVICES"]="-1"    
+    ## Example
     # Functional model
     N, channels, filters = 4, 1, 1
     # input_shape = (N, channels)  # Replace N with the actual size of x            #1D
