@@ -4,7 +4,7 @@ import tensorflow as tf
 class SeparableConvND(tf.keras.layers.Layer):
     """Separable ND convolution using two 0.5ND kernels mother class
 
-    tf-nd-convolutions: High Dimensional Convolution Layers in TensorFlow.
+    ConvND: High Dimensional Convolution Layers in TensorFlow.
     Copyright (C) 2025 Kishore Kumar Tarafdar
 
     This program is free software: you can redistribute it and/or modify

@@ -1,5 +1,5 @@
 """ॐ 
-    tf-nd-convolutions: High Dimensional Convolution Layers in TensorFlow.
+    ConvND: High Dimensional Convolution Layers in TensorFlow.
     Copyright (C) 2025 Kishore Kumar Tarafdar
 
     This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,6 @@
 """
 
 
-from tf_nd_convolutions.FFTConvND import FFTConvND
-from tf_nd_convolutions.SeparableConv4D import SeparableConv4D
-from tf_nd_convolutions.SeparableConv6D import SeparableConv6D
+from ConvND.FFTConvND import FFTConvND
+from ConvND.SeparableConv4D import SeparableConv4D
+from ConvND.SeparableConv6D import SeparableConv6D

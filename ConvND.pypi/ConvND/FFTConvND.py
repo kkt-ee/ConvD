@@ -17,7 +17,7 @@ class FFTConvND(tf.keras.layers.Layer):
         Note: there will be error if L>N
 
 
-        tf-nd-convolutions: High Dimensional Convolution Layers in TensorFlow.
+        ConvND: High Dimensional Convolution Layers in TensorFlow.
         Copyright (C) 2025 Kishore Kumar Tarafdar
 
         This program is free software: you can redistribute it and/or modify
