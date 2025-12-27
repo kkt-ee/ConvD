@@ -1,10 +1,10 @@
 import tensorflow as tf
 # from tensorflow.keras.layers import Layer
 
-class SeparableConvND(tf.keras.layers.Layer):
+class SeparableConvD(tf.keras.layers.Layer):
     """Separable ND convolution using two 0.5ND kernels mother class
 
-    ConvND: High Dimensional Convolution Layers in TensorFlow.
+    ConvD: High Dimensional Convolution Layers in TensorFlow.
     Copyright (C) 2025 Kishore Kumar Tarafdar
 
     This program is free software: you can redistribute it and/or modify

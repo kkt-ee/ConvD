@@ -11,13 +11,13 @@
 
 
 import tensorflow as tf
-from ConvND.SeparableConvNDlayout import SeparableConvND
+from .SeparableConvDlayout import SeparableConvD
 
 
-class SeparableConv4D(SeparableConvND):
+class SeparableConv4D(SeparableConvD):
     """Separable 4D convolution using 2D kernels
 
-    ConvND: High Dimensional Convolution Layers in TensorFlow.
+    ConvD: High Dimensional Convolution Layers in TensorFlow.
     Copyright (C) 2025 Kishore Kumar Tarafdar
 
     This program is free software: you can redistribute it and/or modify

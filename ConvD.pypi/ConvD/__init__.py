@@ -1,5 +1,5 @@
 """ॐ 
-    ConvND: High Dimensional Convolution Layers in TensorFlow.
+    ConvD: High Dimensional Convolution Layers in TensorFlow.
     Copyright (C) 2025 Kishore Kumar Tarafdar
 
     This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,12 @@
 """
 
 
-from ConvND.FFTConvND import FFTConvND
-from ConvND.SeparableConv4D import SeparableConv4D
-from ConvND.SeparableConv6D import SeparableConv6D
+from .FFTConvD import FFTConvD
+from .SeparableConv4D import SeparableConv4D
+from .SeparableConv6D import SeparableConv6D
+
+__all__ = [
+    "FFTConvD",
+    "SeparableConv4D",
+    "SeparableConv6D",
+]

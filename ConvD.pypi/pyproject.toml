@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "ConvND"
-version = "0.0.1"
+name = "ConvD"
+version = "0.0.2"
 authors = [
   { name="Kishore Kumar Tarafdar", email="kishorektarafdar@gmail.com" },
 ]
@@ -21,5 +21,8 @@ license = "GPL-3.0-or-later"
 license-files = [ "LICENSE" ]
 
 [project.urls]
-Homepage = "https://github.com/kkt-ee/ConvND"
-Issues = "https://github.com/kkt-ee/ConvND/issues"
+Homepage = "https://github.com/kkt-ee/ConvD"
+Issues = "https://github.com/kkt-ee/ConvD/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ConvD"]

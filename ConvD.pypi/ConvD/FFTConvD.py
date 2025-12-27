@@ -2,8 +2,8 @@
 ## Equivalent to cyclic convolution
 import tensorflow as tf
 
-class FFTConvND(tf.keras.layers.Layer):
-    """ ND convolutions using convolution theorem 
+class FFTConvD(tf.keras.layers.Layer):
+    """ D-dimensional convolutions using convolution theorem 
         Separable FFTND
 
         Equivalent to circular convolution
@@ -17,7 +17,7 @@ class FFTConvND(tf.keras.layers.Layer):
         Note: there will be error if L>N
 
 
-        ConvND: High Dimensional Convolution Layers in TensorFlow.
+        ConvD: High Dimensional Convolution Layers in TensorFlow.
         Copyright (C) 2025 Kishore Kumar Tarafdar
 
         This program is free software: you can redistribute it and/or modify
@@ -35,7 +35,7 @@ class FFTConvND(tf.keras.layers.Layer):
         
     --kkt@06Jul2025"""
     def __init__(self, filters, kernel_size=9, regularizer=None):#, l1=0.0, l2=0.0):
-        super(FFTConvND, self).__init__()
+        super(FFTConvD, self).__init__()
         self.filters = filters
         self.kernel_size = kernel_size
         self.kernel_regularizer = regularizer
@@ -285,7 +285,7 @@ if __name__ =='__main__':
     #  conv2d_filters=32, conv2d_kernel_size=3)
 
     # Apply the custom layer to the inputs
-    H = FFTConvND(filters=1, kernel_size=1)
+    H = FFTConvD(filters=1, kernel_size=1)
     outputs = H(inputs)
 
     # Build the model

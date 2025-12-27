@@ -11,13 +11,13 @@
 
 
 import tensorflow as tf
-from ConvND.SeparableConvNDlayout import SeparableConvND
+from .SeparableConvDlayout import SeparableConvD
 
 
-class SeparableConv6D(SeparableConvND):
+class SeparableConv6D(SeparableConvD):
     """Separable 6D convolution using 3D kernels
 
-    ConvND: High Dimensional Convolution Layers in TensorFlow.
+    ConvD: High Dimensional Convolution Layers in TensorFlow.
     Copyright (C) 2025 Kishore Kumar Tarafdar
 
     This program is free software: you can redistribute it and/or modify
