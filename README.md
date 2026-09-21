@@ -1,4 +1,4 @@
-# ConvD: D-dimensional Convolution Layers (D>3) in Tensorflow
+# ConvD: D-dimensional Convolution Layers (D>3) in TensorFlow
 
 [![PyPI Version](https://img.shields.io/pypi/v/convd?label=PyPI&color=gold)](https://pypi.org/project/convd/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/convd)](https://pypi.org/project/convd/)
