@@ -6,23 +6,26 @@ build-backend = "hatchling.build"
 name = "ConvD"
 version = "0.0.2"
 authors = [
-  { name="Kishore Kumar Tarafdar", email="kishorektarafdar@gmail.com" },
+  { name="Kishore Kumar Tarafdar", email="kkt.compute@gmail.com" },
 ]
-description = "High Dimensional Convolution Layers in TensorFlow."
+description = "D-dimensional Convolution Layers (D>3) in TensorFlow"
 readme = "README.md"
 requires-python = ">=3.9"
+dependencies = [
+  "tensorflow>=2.15",
+]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Operating System :: OS Independent",
   "Topic :: Scientific/Engineering",
   "Intended Audience :: Science/Research"
 ]
-license = "GPL-3.0-or-later"
+license = "Apache-2.0"
 license-files = [ "LICENSE" ]
 
 [project.urls]
-Homepage = "https://github.com/kkt-ee/ConvD"
-Issues = "https://github.com/kkt-ee/ConvD/issues"
+Homepage = "https://github.com/kkt-ee/convd"
+Issues = "https://github.com/kkt-ee/convd/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["ConvD"]
+packages = ["convd"]
